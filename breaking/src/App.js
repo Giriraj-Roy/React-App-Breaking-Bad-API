@@ -4,12 +4,17 @@ import axios from 'axios'
 import Header from './components/ui/Header';
 import CharacterGrid from './components/characters/CharacterGrid';
 import Search from './components/ui/Search';
+import Pagination from './components/Pagination';
 
 const App = () => {
 
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
+
+  //Pagination
+  const[currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(5);
 
   useEffect( ()=> {
     const fetchItems = async () => {
@@ -23,11 +28,24 @@ const App = () => {
 
   }, [query])
 
+  //Get Current Posts
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = items.slice(indexOfFirstPost, indexOfLastPost);
+
+  //Change Page
+  const paginate = pageNumber =>setCurrentPage(pageNumber);
+
+
   return (
     <div className="App">
       <Header/>
       <Search getQuery={ ( q )=> setQuery(q)}/>
-      <CharacterGrid loading={loading} items={items} />
+      <CharacterGrid loading={loading} items={currentPosts} />
+      <Pagination 
+        postsPerPage={postsPerPage} 
+        totalPosts={items.length} 
+        paginate={paginate}/>
     </div>
   );
 }

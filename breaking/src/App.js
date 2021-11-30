@@ -42,6 +42,7 @@ const App = () => {
       <Header/>
       <Search getQuery={ ( q )=> setQuery(q)}/>
       <CharacterGrid loading={loading} items={currentPosts} />
+      
       <Pagination 
         postsPerPage={postsPerPage} 
         totalPosts={items.length} 

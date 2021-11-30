@@ -11,13 +11,21 @@ const Pagination = ({ postsPerPage, totalPosts, paginate}) => {
     
     return (
         <nav>
-            <ul className="pagination">
-                {pageNumbers.map(number =>(
-                    <li key={number} className="pageitem">
-                        <a onClick={() => paginate(number)} href="!#" className='pagelink'>{number}</a>
-                    </li>
-                ))}
-            </ul>
+            <div>
+                <div className="ui fluid container">
+                    {/* <button className="ui icon button"> */}
+                        
+                        {pageNumbers.map(number =>(
+                            <>
+                                {/* <i aria-hidden="true" class="heart icon"></i> */}
+                                <button key={number} className="ui black icon button">
+                                    <a onClick={() => paginate(number)} href="!#" className='pagelink'>{number}</a>
+                                </button>
+                            </>
+                            ))}
+                    {/* </button> */}
+                </div>
+            </div>
             
         </nav>
     )

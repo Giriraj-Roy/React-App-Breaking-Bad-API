@@ -1,9 +1,9 @@
 # React-App-Breaking-Bad-API
 
-Paginating objects using React JS. A random API has been integrated here using __axios__.
-Implemented React Hooks which is according to me way better than using Class Components.
+The Breaking Bad API has been integrated here using __axios__ and the characters with their respective details have been showcased.
+Implemented React Hooks through Functional Components which is better than using Class Components.
 
-I also paginated results into groups of five.
+Paginated results into groups of five.
 
 Using Semantic UI just to make things readable.
 [Explore the Docs to Semantic UI](https://react.semantic-ui.com/)

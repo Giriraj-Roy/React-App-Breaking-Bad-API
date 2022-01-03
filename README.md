@@ -31,6 +31,7 @@ cd breaking
 
 You are good to go ....
 
+[Click here to access the site](https://breakingbad-cast-giriraj.netlify.app/)
 
 Preview of the Results
 

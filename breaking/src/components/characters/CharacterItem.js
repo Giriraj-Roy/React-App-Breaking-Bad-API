@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+
 
 const CharacterItem = ({item }) => {
+
+  const [toggle, setToggle] = useState(false);
+
     return (
-        <div className='card'>
+        <div className='card' onClick={() => setToggle(!toggle)}>
       <div className='card-inner'>
-        <div className='card-front'>
+        <div className={toggle ? 'thanos':'card-front'}>
           <img src={item.img} alt='' />
         </div>
-        <div className='card-back'>
+        <div className={toggle ? 'thanos':'card-back'}>
           <h1>{item.name}</h1>
           <ul>
             <li>

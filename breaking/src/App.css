@@ -37,6 +37,7 @@ header {
   height: 200px;
 }
 
+
 header img {
   width: 200px;
 }
@@ -46,11 +47,25 @@ header img {
   align-items: center;
   justify-content: center;
 }
+.center:hover{
+  transition: 3s;
+  transform: rotate3d(1, 1, 1, 45deg);
+  transform-origin: 2rem;
+  filter: drop-shadow(30px 10px 4px #39e010);
+}
 
 .search {
   height: 100px;
   color: #000;
   border: 2px;
+}
+
+.form-control{
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 5px 5px 5px 5px rgb(14, 102, 50);
+  text-shadow: 2px 2px 2px 2px #333;
+
 }
 
 input[type='text'] {
@@ -68,7 +83,7 @@ input[type='text'] {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -103,6 +118,16 @@ input[type='text'] {
   transform: rotateY(180deg);
 }
 
+/* .card-inner{transition: all 2s;} */
+.thanos{
+  /* width: 2rem;
+  height: 2rem; */
+  transition: all 6s;
+  transform: rotateY(60deg) translateY(-80px);
+  opacity: 0;
+  filter: blur(30px);
+}
+
 .card-front,
 .card-back {
   position: absolute;
@@ -110,6 +135,7 @@ input[type='text'] {
   height: 300px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
 }
 
 .card-back {

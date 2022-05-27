@@ -14,7 +14,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate}) => {
             <div>
                 <div className="ui fluid container">
                     {/* <button className="ui icon button"> */}
-                        
+
                         {pageNumbers.map(number =>(
                             <>
                                 {/* <i aria-hidden="true" class="heart icon"></i> */}

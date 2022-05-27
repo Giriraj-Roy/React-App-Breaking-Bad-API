@@ -49,9 +49,9 @@ header img {
 }
 .center:hover{
   transition: 3s;
-  transform: rotate3d(1, 1, 1, 45deg);
-  transform-origin: 2rem;
-  filter: drop-shadow(30px 10px 4px #39e010);
+  transform: rotateY(360deg);
+  /* transform-origin: 2rem; */
+  filter: drop-shadow(30px 10px 4px #1fa00c);
 }
 
 .search {

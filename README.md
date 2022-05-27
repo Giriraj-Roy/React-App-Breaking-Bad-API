@@ -34,10 +34,10 @@ You are good to go ....
 
 [Click here to access the site. Definitely try The THANOS SNAP Effect and Search Filter](https://breaking-bad-cast-seven.vercel.app/)
 
-Preview of the Results
+Preview of the Results.
+You can never Experience The Best In PNGs
 
-
-![You can never Experience The Best In PNGs](https://user-images.githubusercontent.com/88903134/170725196-edcbb0fa-b419-4d02-86e2-e84f7bceb1cf.png)
+![You can never Experience The Best In PNGs](https://user-images.githubusercontent.com/88903134/170725632-e0c2a3b1-f628-433b-8762-53d2b2b5d69c.png)
 
 
 

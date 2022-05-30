@@ -1,5 +1,10 @@
-# React-App-Breaking-Bad-API
+# React-App-Breaking-Bad-Cast
+<hr/>
 
+https://user-images.githubusercontent.com/88903134/170935706-fc7557ff-9523-4390-ae91-6dc4c9193c19.mp4
+
+<hr/>
+<br>
 The Breaking Bad API has been integrated here using __axios__ and the characters with their respective details have been showcased.
 Implemented React Hooks through Functional Components which is better than using Class Components.
 
@@ -39,6 +44,10 @@ You can never Experience The Best In PNGs
 
 ![You can never Experience The Best In PNGs](https://user-images.githubusercontent.com/88903134/170725632-e0c2a3b1-f628-433b-8762-53d2b2b5d69c.png)
 
+
+
+
+<!-- https://user-images.githubusercontent.com/88903134/170935706-fc7557ff-9523-4390-ae91-6dc4c9193c19.mp4 -->
 
 
 
